@@ -16,6 +16,30 @@ const everydayPack = new Backpack(
   "December 5, 2018 15:00:00 PST"
 );
 
+// Template literals - One or main way to update the dynamic values in HTML through java script.
+
+const content = `
+<main>
+<article>
+  <h1>${everydayPack.name}</h1>
+  <ul>
+    <li>Volume: ${everydayPack.volume}</li>
+    <li>Color: ${everydayPack.color}</li>
+    <li>Age: ${everydayPack.backpackAge()}</li>
+    <li>Number of pockets: ${everydayPack.pocketNum}</li>
+    <li>Left strap length: ${everydayPack.strapLength.left}</li>
+    <li>Right strap length: ${everydayPack.strapLength.right}</li>
+    <li>Lid status: ${everydayPack.lidOpen}</li>
+  </ul>
+</article>
+</main>
+`;
+
+// String concatination - another way to map the values in HTML
+//const content = "<h1>" + everydayPack.name + "</h1>";
+
+document.body.innerHTML = content;
+
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());

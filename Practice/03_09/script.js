@@ -24,3 +24,8 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+//write the functions to change the all the properties values in each method.
+
+// write hellow world in java script
+

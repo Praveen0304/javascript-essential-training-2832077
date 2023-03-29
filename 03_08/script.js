@@ -21,5 +21,11 @@ const backpack = {
   },
 };
 
+// Dot operator
 console.log("The backpack object:", backpack);
 console.log("The pocketNum value:", backpack.pocketNum);
+console.log("Strap length L:", backpack.strapLength.left);
+
+//square bracket operator
+var query = "pocketNum";
+console.log("The pocketNum value--:", backpack[query]);

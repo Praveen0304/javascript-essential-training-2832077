@@ -15,7 +15,7 @@ function headingColor() {
   document.querySelector(".title").style.color = color;
 }
 
-headingColor();
-
 document.querySelector(".right").style.backgroundColor = color;
 document.querySelector(".right .color-value").innerHTML = color;
+
+headingColor();
