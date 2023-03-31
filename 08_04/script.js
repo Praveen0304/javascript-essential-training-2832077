@@ -25,3 +25,4 @@ const addPack = (currentPack) => {
 
 const main = document.querySelector("main");
 main.append(addPack(greenPack));
+console.log("main:", main);
